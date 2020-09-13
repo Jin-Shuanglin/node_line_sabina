@@ -232,6 +232,18 @@ bot.on('message', async (event) => {
         )
       }
     }
+  } else if (date > 21) {
+    event.reply([
+      {
+        type: 'text',
+        text: '我平常早上6點到晚上10點會在\n現在我要睡了\n晚安～'
+      },
+      {
+        type: 'sticker',
+        packageId: '11539',
+        stickerId: '52114121'
+      }
+    ])
   } else if (wait) {
     event.reply([
       {
@@ -242,18 +254,6 @@ bot.on('message', async (event) => {
         type: 'sticker',
         packageId: '11538',
         stickerId: '51626533'
-      }
-    ])
-  } else {
-    event.reply([
-      {
-        type: 'text',
-        text: '我平常早上6點到晚上10點會在\n現在我要睡了\n晚安～'
-      },
-      {
-        type: 'sticker',
-        packageId: '11539',
-        stickerId: '52114121'
       }
     ])
   }
