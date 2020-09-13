@@ -32,7 +32,7 @@ bot.on('message', async (event) => {
         if (date >= 6 && date <= 11) {
           message = '早安～\n' + hello
         } else if (date >= 12 && date <= 18) {
-          message = '午安～\n' + hello
+          message = '午安～\n' + hello + date
         } else {
           message = '晚安～\n' + hello
         }
