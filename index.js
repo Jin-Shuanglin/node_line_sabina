@@ -11,7 +11,7 @@ const bot = linebot({
   channelSecret: process.env.CHANNEL_SECRET,
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
 })
-const date = new Date().getHours()
+const date = new Date().getHours() + 8
 let wait = false
 const gethello = ['哈囉哈', '嘿', '嘿嘿', '哈囉', 'Yo', 'YO', 'yo', '早安', '早', '午安', '你好', '晚安', 'hello', 'Hello', 'hi', 'HI', 'Hi', '嗨']
 const sendhello = ['找我有什麼事嗎？', '今天過得如何？', '你好嗎？']
