@@ -217,7 +217,7 @@ bot.on('message', async (event) => {
                 text: random(robottext[i][j])
               }
             )
-            wait = true
+            // wait = true
           }
         }
       }
